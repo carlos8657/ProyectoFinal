@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_pagina.css">
+    <link rel="stylesheet" href="/css/estilo_proyecto.css">
+    <script src="/js/admin.js" type="module"></script>
+    <title>Administrador</title>
+</head>
+<body>
+    <div id="prohibido"></div>
+    <div id="xd">
+        
+        <header>
+            <img src="/img/Bambi.jpg"  style="width: 130px; height: 130px;" alt="">
+        </header>
+
+        <center>
+            <h1>PRODUCTOS</h1>
+            <label for="">Id: </label>
+            <input type="text" id="idProducto" name="idProducto" required>
+            <label for="">Nombre: </label>
+            <input type="text" id="nombreProducto" name="nombreProducto" required>
+            <label for="">Precio: </label>
+            <input type="text" id="precioProducto" name="precioProducto" required>
+            <input type="text" id="estatusProducto" name="estatusProducto" required readonly value="0" style="display: none;">
+            <br><br>
+            <label for="">Descripcion: </label>
+            <br>
+            <textarea id="descripcionProducto" name="descripcionProducto" required cols="82" rows="5"></textarea>
+            <br><hr>
+        </center>
+        
+        <center>
+            <h1>Imagen:</h1>
+            
+            <img src="/img/icono.png" alt="" height="200px" width="200px" id="imagenProducto">
+            <br>
+            <label for="">Seleccionar la imagen jpg,jpeg,png</label>
+            <input type="file" name="archivo" id="archivo" accept=".jpg , .jpeg , .png">
+            <label for="">Nombre de la Imagen: </label>
+            <input type="text" name="nombreImagen" id="nombreImagen" size="20" readonly="true">
+            <label for="">URL de la imagen: </label>
+            <input type="text" name="urlImagen" id="urlImagen" size="20" readonly="true">
+            <br><br><hr>
+        </center>
+        
+
+        <center>
+            <div class="botonesadmin">
+                <button id="btnInsertar">Insertar Producto</button>
+                <button id="btnBuscar">Buscar producto</button>
+                <button id="btnActualizar">Actualizar</button>
+                <button id="btnDeshabilitar">Habilitar / Deshabilitar Producto</button>
+                <button id="btnMostrar">Mostrar Productos</button>
+                <button id="btnLimpiar">Limpiar</button>
+                <button id="btnCerrarSesion">Desconectar</button>
+                <button id="btnInicio">Ir Pagina Web</button>
+            </div>
+        </center>
+        
+        <div id="prod">
+            <center>
+                <h1>LISTA</h1>
+                <br>
+            </center>
+            <div class="tenisfotos">
+                <div id="lista">
+                
+                </div>
+            </div>
+            
+        </div>
+
+        <footer>
+            <h2>Carlos Alberto Garcia Medrano 2022</h2>
+        </footer>
+    </div>
+    
+
+
+</body>
+</html>
