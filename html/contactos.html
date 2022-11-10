@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style_pagina.css" />
+    <title>Contactos</title>
+  </head>
+  <body>
+    <header>
+      <img src="/img/Bambi.jpg" style="width: 130px; height: 130px" alt="" />
+    </header>
+
+    <nav>
+      <a href="/html/inicio.html">Inicio</a>
+      <a href="/html/tenishombre.html">Tenis</a>
+      <a href="/html/nosotros.html">Acerca de nosotros</a>
+      <a href="/html/contactos.html" style="background-color: gray">Contacto</a>
+    </nav>
+
+    <div class="row">
+      <aside>
+        <img class="anuncio" src="/img/anunciotenis1.jpg" alt="" />
+      </aside>
+      <section>
+        <center>
+          <div id="caja_contacto">
+            <form action="2020030810@upsin.edu.mx" method="get">
+              <label for="Nombre">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" class="inputs" required="true" placeholder="Ej. Pedro"/>
+              <br><br>
+              <label for="Apellido">Apellido:</label>
+              <input type="text" name="apellido" id="apellido" class="inputs" required="true" placeholder="Ej. Sanchez"/>
+              <br><br>
+              <label for="Correo">Correo:</label>
+              <input type="email" name="correo" id="correo" class="inputs" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="usuario@gmail.com"/>
+              <br><br>
+              <label for="Telefono">Telefono</label>
+              <input type="text" placeholder="+52" class="inputs" />
+              <h3>Sexo:</h3>
+              <label for="">Masculino</label>
+              <input type="radio" name="sexo" id="masculino" />
+              <br />
+              <label for="">Femenino</label>
+              <input type="radio" name="sexo" id="femenino" />
+              <br />
+              <h3>Comentarios:</h3>
+              <textarea name="comentarios" id="comentarios" class="inputs" cols="30" rows="10" placeholder="Escribe tus comentarios"></textarea>
+              <br>
+              <input type="submit" value="Enviar informacion" />
+              <input type="reset" value="Limpiar" />
+            </form>
+          </div>
+        </center>
+      </section>
+      <aside>
+        <img class="anuncio" src="/img/anunciotenis1.jpg" alt="" />
+      </aside>
+    </div>
+
+    <footer>
+      <h2>Carlos Alberto Garcia Medrano 2022</h2>
+    </footer>
+  </body>
+</html>
