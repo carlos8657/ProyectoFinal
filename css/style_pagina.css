@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #01EBFA;
+    align-items: center;
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #333;
+}
+
+nav a{
+    color: white;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+}
+
+a{
+    transition:  .5s;
+}
+
+
+nav a:hover{
+    background-color: gray;
+}
+
+.row, .tenisfotos, .nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    vertical-align: middle;
+}
+
+
+.tenisfotos img{
+    height: 230px;
+    width: 250px;
+}
+
+
+aside{
+    text-align: center;
+    flex: 10%;
+    padding: 20px;
+}
+
+section{
+    text-align: center;
+    flex: 40%;
+    padding: 20px;
+    
+}
+
+section p, .descripcion p, #todos p{
+    text-align: justify
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #01EBFA;
+}
+
+@media screen and (max-width: 700px){
+    nav, .row, nav a{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    #mapa{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    #mapa{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .inputs{
+        height: 25px;
+        width: 100px;
+    }
+}
+
+.inputs{
+    margin: 10px;
+}
+
+
+
+#caja_contacto{
+    width: 50%;
+    padding: 25px;
+    border: 3px solid black;
+}
+
+.anuncio{
+    margin: 20px;
+    width: 350px;
+    height: 600px;
+}
+
+.img{
+    height: 500px;
+    width: 400px;
+}
+
+.producto{
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 260px;
+    margin: 35px;
+}
+
+.producto:hover{
+    border: 1px solid black;
+}
+
+
+.foto img{
+    width: 255px;
+}
+
+.foto h4{
+    text-align: center;
+}
+
+
+.descripcion{
+    width: 250px;
+    text-align: justify;
+    align-items: center;
+}
+
+#todo,#lista{
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#comentarios{
+    resize: none;
+}
+
+
+#mapa{
+    margin: 10px
+}
+
+
+#todos{
+    text-align: center;
+    width: 1000px;
+    justify-content: center;
+}
