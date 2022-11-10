@@ -28,6 +28,7 @@ const storage = getStorage();
 
 // Variables
 
+
 // Admin
 var id = "";
 var nombreProducto = "";
@@ -74,15 +75,7 @@ if(window.location.href == "https://2020030810.000webhostapp.com/html/admin.html
     window.onload = validarUsuario();    
 }
 
-if(window.location.href == "https://2020030810.000webhostapp.com/html/tenishombre.html"){
-    window.onload = mostrarProductos();    
-}
-
-
-if(window.location.href == "https://2020030810.000webhostapp.com/html/admin.html"){
-    window.onload = mostrarProductos(); 
-}
-
+window.onload = mostrarProductos();    
 
 
 function validarUsuario(){
@@ -98,8 +91,6 @@ function validarUsuario(){
             window.location.href="https://2020030810.000webhostapp.com/html/login.html";
         }, 3000);
         
-
-
     }
     });
 }
